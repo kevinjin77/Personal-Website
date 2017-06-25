@@ -8,20 +8,21 @@ body, input, button {
 header {
   position: relative;
   width: 100%;
-  min-height: auto;
+  height: 100%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
   background-position: center;
   background-image: url('../img/background.jpg');
-  text-align: center;
 }
 
 header .header-content {
     position: relative;
     text-align: right;
-    padding: 200px 50px 200px 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 400px;
     width: 100%;
 }
 
@@ -41,4 +42,41 @@ header .header-content .header-content-inner p {
     color: rgba(255, 255, 255, 0.7);
     font-size: 16px;
     margin-bottom: 20px;
+}
+
+.btn {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.btn-border {
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff !important;
+}
+
+.btn-border:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+ h1.section-heading {
+  font-size: 30px;
+}
+
+div.container {
+  padding: 80px 50px 80px 50px;
+}
+
+section#about.bg-primary {
+  background-color: #4CAF50;
+}
+
+.bigHr {
+    background-color: dimgrey !important;
+    color: black !important;
+    border: solid 2px black !important;
+    height: 1px !important;
+    width: 20% !important;
+    min-width: 300px;
+    margin: 5px 0 30px 0;
 }
