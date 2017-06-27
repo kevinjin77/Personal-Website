@@ -15,7 +15,7 @@ header {
     background: linear-gradient( 
     rgba(0, 0, 0, 0.4), 
     rgba(0, 0, 0, 0.4)), 
-    url('../img/background.jpg');
+    url('../img/gallery1.jpg');
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -126,7 +126,7 @@ div.container {
 
 section#gallery.bg-primary {
     position: relative;
-    background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../img/background2.jpg');
+    background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../img/gallery2.jpg');
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
