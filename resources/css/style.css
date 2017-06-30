@@ -125,8 +125,8 @@ div .section-content {
 div.container {
     padding-top: 80px;
     padding-bottom: 80px;
-    padding-left: 30px auto;
-    padding-right: 30px auto;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 section#gallery.bg-primary {
