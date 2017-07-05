@@ -18,12 +18,9 @@
 </head>
 
 <body>
-    <div class="navbar navbar-invers menu-wrap" style="position: fixed; z-index: 9; width: 100%; background-color: transparent;">
-    	<div id="navbar-content">
-    		<i id="menu-button" class="fa fa-bars" style="font-size: 1.5em; float: left"></i>
-        	<h4 class="menu-sign" style="float: left">Menu</h4> 
-    	</div>
-        <!-- <ul style="color: #000000" class="nav navbar-nav main-navigation">
+    <div class="sidebar">
+        <!-- Menu -->
+        <ul class="nav">
             <li class="active"><a href="#home">Home</a></li>
             <li><a href="#about">About Me</a></li>
             <li><a href="#gallery">Gallery</a></li>
@@ -31,12 +28,17 @@
             <li><a href="resources/assets/resume.pdf" target="_blank">Resume</a></li>
             <li><a href="#footer">Contact</a></li>
         </ul>
-        <button class="close-button" id="close-button">Close Menu</button> -->
     </div>
-    <header id="home" class="bg-primary">
+    <div class="navbar navbar-invers menu-wrap" style="position: fixed; z-index: 9; width: 100%; background-color: transparent;">
+        <div id="navbar-content">
+            <i id="menu-button" class="fa fa-bars" style="font-size: 1.5em; float: left"></i>
+            <h4 class="menu-sign" style="float: left">Menu</h4>
+        </div>
+    </div>
+    <header id="home" class="bg-primary min-height">
         <div class="header-content">
             <div class="header-content-inner">
-                <h1 class="tlt" style="font-size: 3em">
+                <h1 class="tlt" style="font-size: 16px; font-size: 3.5vw;">
 					<ul class="texts">
 						<li>Welcome to my website.</li>
 						<li>I hope you enjoy what you see.</li>
@@ -44,7 +46,7 @@
 						<li>Welcome to me.</li>
 					</ul>
 					</h1>
-                <h2 style="color: white; font-size: 1.5em; font-weight: 300">A Big Fish in a Big Pond.</h2>
+                <h2 style="color: white; font-size: 8px; font-size: 1.5vw; font-weight: 300">A Big Fish in a Big Pond.</h2>
                 <hr>
                 <a href="#about" class="btn btn-default btn-transparent">Let's Get Started</a>
             </div>
@@ -71,7 +73,7 @@
         </div>
         </div>
     </section>
-    <section class="bg-primary" id="gallery">
+    <section class="bg-primary min-height" id="gallery">
         <div class="container">
             <div class="row">
                 <h2 class="section-heading">Gallery</h2>
