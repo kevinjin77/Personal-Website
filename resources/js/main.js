@@ -18,17 +18,50 @@ $('.tlt').textillate({
     },
 });
 
-$(document).ready(function() {
-    var scroll_pos = 0;
-    var clientHeight = document.getElementById('gallery').clientHeight;
-    $(document).scroll(function() {
-        scroll_pos = $(this).scrollTop();
-        if (scroll_pos > clientHeight) {
-        	document.getElementById("navbar-content").style.color = "black";
-        } else {
-            document.getElementById("navbar-content").style.color = "white";
-        }
-    });
+
+window.addEventListener('resize', setHeight);
+
+var homeHeight = document.getElementById('home').offsetHeight;
+var aboutHeight = homeHeight + document.getElementById('about').offsetHeight;
+var galleryHeight = aboutHeight + document.getElementById('gallery').offsetHeight;
+
+function setHeight() {
+    homeHeight = document.getElementById('home').offsetHeight;
+    aboutHeight = homeHeight + document.getElementById('about').offsetHeight;
+    galleryHeight = aboutHeight + document.getElementById('gallery').offsetHeight;
+}
+
+var scroll_pos = 0;
+
+$(document).scroll(function() {
+    console.log(homeHeight);
+    console.log(aboutHeight);
+    console.log(galleryHeight);
+    scroll_pos = $(this).scrollTop();
+    /*if (scroll_pos < homeHeight || (scroll_pos > aboutHeight && scroll_pos < galleryHeight)) {
+        document.getElementById("navbar-content").style.color = "white";
+    } else {
+        document.getElementById("navbar-content").style.color = "black";
+    }*/
+    if (scroll_pos > galleryHeight) {
+        document.getElementById("navbar-content").style.color = "black";
+    } else {
+        document.getElementById("navbar-content").style.color = "white";
+    }
+});
+
+var pushed = true;
+
+$("i#menu-button.fa.fa-bars").click(function() {
+    if (pushed) {
+        $('body').animate({left: "250px"}, 200);
+        $('div.sidebar').animate({left: "0px"}, 200);
+        pushed = false;
+    } else {
+        $('body').animate({left: "0px"}, 200);
+        $('div.sidebar').animate({left: "-250px"}, 200);
+        pushed = true;
+    }
 });
 
 $("span.glyphicon.glyphicon-info-sign").mouseover(function() {
