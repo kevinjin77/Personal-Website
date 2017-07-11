@@ -81,11 +81,9 @@ ul.nav {
     font-weight: 400;
 }
 
-li a {
-    color: black;
-}
-
-li a:hover {
+li a,
+li a:hover,
+li a:active {
     color: black;
 }
 
@@ -251,24 +249,40 @@ span.glyphicon.glyphicon-info-sign:hover {
     color: rgba(255, 255, 255, 0.2);
 }
 
-ul.project-list li {
-    padding: 10px 10px 10px 10px;
+ul.nav.project-list {
+    padding-top: 5px;
+}
+
+ul.nav.project-list:hover {
+    cursor: pointer;
 }
 
 .project-list {
     float: left;
 }
 
-h1.project-title {
+h1#project-title {
     font-size: 3.5em;
     font-weight: 700;
     margin: 0 0 0 0;
 }
 
-h4.project-subtitle {
+h4#project-subtitle {
     color: #616161;
     margin: 0 0 0 0;
     padding-bottom: 30px;
+}
+
+div#project-description {
+    float: left;
+    width: 50%;
+    position: inline-block;
+}
+
+div.project-visual {
+    float: left;
+    width: 30%;
+    position: inline-block;
 }
 
 section#footer {
