@@ -22,7 +22,7 @@
         <!-- Menu -->
         <ul class="nav">
             <li class="active"><a href="#home">Home</a></li>
-            <li><a href="#about">About Me</a></li>
+            <li><a onclick="scrolltop();">About Me</a></li>
             <li><a href="#gallery">Gallery</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="resources/assets/resume.pdf" target="_blank">Resume</a></li>
@@ -93,28 +93,30 @@
             <div class="row">
                 <h2 class="section-heading">Projects</h2>
                 <hr class="bigHr">
-                <div class="project-list" style="float: left; position: inline-block; width: 25%;">
-                    <ul class="project-list">
-                        <li><a href="#home" selected>Clarifai Chef</a></li>
-                        <li><a href="#home" selected>Sushi Go Calculator</a></li>
-                        <li><a href="#home" selected>Sonic Dash</a></li>
-                        <li><a href="#home" selected>PIG</a></li>
-                        <button type="button" class="btn">Basic</button>
+                <div class="project-list" style="float: left; position: inline-block; width: 20%;">
+                    <ul class="nav project-list">
+                        <li><a class="clarifai-chef">Clarifai Chef</a></li>
+                        <li><a class="sushi-go">Sushi Go Calculator</a></li>
+                        <li><a class="sonic-dash">Sonic Dash</a></li>
+                        <li><a class="pig">PIG</a></li>
                     </ul>
                 </div>
-                <div class="project-description" style="float: left; position: inline-block; width:75%;">
-                    <h1 class="project-title">SONIC DASH</h1>
-                    <h4 class="project-subtitle">Languages Used: Turing</h4>
-                    <p>A side-scrolling minigame with your favorite characters from the Sonic franchise! This game includes a variety of different power-ups, as well as a plethora of Dr. Eggman's baddies. Includes highscore functionality !
+                <div id="project-description">
+                    <h1 id="project-title">SONIC DASH</h1>
+                    <h4 id="project-subtitle">Languages Used: <span id="language">Turing</span> </h4>
+                    <p id="project-paragraph">A side-scrolling minigame with your favorite characters from the Sonic franchise! This game includes a variety of different power-ups, as well as a plethora of Dr. Eggman's baddies. Includes highscore functionality!
                     </p>
-                    <a href="https://github.com/kevinjin77/Sonic-Dash" target="_blank"><i class="fa fa-github" style="font-size: 3em"></i></a>
+                    <a id="project-link" href="https://github.com/kevinjin77/Sonic-Dash" target="_blank"><i class="fa fa-github" style="font-size: 3em"></i></a> Check it out on Github!
+                </div>
+                <div class="project-visual">
+                    <img id="project-img" src="resources/img/sonic-dash.png" alt="Sonic Dash"><img>
                 </div>
             </div>
         </div>
     </section>
     <section id="footer" style="color: white;">
-        <a href="#home" class="btn btn-primary back-to-top">
-            <i class=" mdi-hardware-keyboard-arrow-up"></i>
+        <a class="btn btn-primary back-to-top">
+            <i class="mdi-hardware-keyboard-arrow-up"></i>
         </a>
         <div class="container footer-container">
             <div class="row">
