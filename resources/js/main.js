@@ -24,11 +24,13 @@ window.addEventListener('resize', setHeight);
 var homeHeight = document.getElementById('home').offsetHeight;
 var aboutHeight = homeHeight + document.getElementById('about').offsetHeight;
 var galleryHeight = aboutHeight + document.getElementById('gallery').offsetHeight;
+var projectsHeight = galleryHeight + document.getElementById('projects').offsetHeight;
 
 function setHeight() {
     homeHeight = document.getElementById('home').offsetHeight;
     aboutHeight = homeHeight + document.getElementById('about').offsetHeight;
     galleryHeight = aboutHeight + document.getElementById('gallery').offsetHeight;
+    projectsHeight = galleryHeight + document.getElementById('projects').offsetHeight;
 }
 
 var scroll_pos = 0;
@@ -69,8 +71,8 @@ var currentProject = 3;
 
 $("a.clarifai-chef").click(function() {
     if (currentProject != 1) {
-        $("#project-description").fadeOut(500);
-        $("#project-description").fadeIn(500);
+        $("#project").fadeOut(500);
+        $("#project").fadeIn(500);
         setTimeout(function() {
             $('#project-title').html("CLARIFAI CHEF");
             $('#language').html("Java (Android Studio)");
@@ -83,8 +85,8 @@ $("a.clarifai-chef").click(function() {
 
 $("a.sushi-go").click(function() {
     if (currentProject != 2) {
-        $("#project-description").fadeOut(500);
-        $("#project-description").fadeIn(500);
+        $("#project").fadeOut(500);
+        $("#project").fadeIn(500);
         setTimeout(function() {
             $('#project-title').html("SUSHI GO");
             $('#language').html("HTML, CSS, Javascript");
@@ -97,8 +99,8 @@ $("a.sushi-go").click(function() {
 
 $("a.sonic-dash").click(function() {
     if (currentProject != 3) {
-        $("#project-description").fadeOut(500);
-        $("#project-description").fadeIn(500);
+        $("#project").fadeOut(500);
+        $("#project").fadeIn(500);
         setTimeout(function() {
             $('#project-title').html("SONIC DASH");
             $('#language').html("Turing");
@@ -111,8 +113,8 @@ $("a.sonic-dash").click(function() {
 
 $("a.pig").click(function() {
     if (currentProject != 4) {
-        $("#project-description").fadeOut(500);
-        $("#project-description").fadeIn(500);
+        $("#project").fadeOut(500);
+        $("#project").fadeIn(500);
         setTimeout(function() {
             $('#project-title').html("PIG");
             $('#language').html("Turing");
@@ -123,12 +125,28 @@ $("a.pig").click(function() {
     currentProject = 4;
 });
 
-function scrolltop () {
+function scrollHome () {
+	$('body').animate({scrollTop:0}, 400);
+}
+
+function scrollAbout () {
 	$('body').animate({scrollTop:homeHeight}, 400);
 }
 
+function scrollGallery () {
+	$('body').animate({scrollTop:aboutHeight}, 400);
+}
+
+function scrollProjects () {
+	$('body').animate({scrollTop:galleryHeight}, 400);
+}
+
+function scrollContact () {
+	$('body').animate({scrollTop:projectsHeight}, 400);
+}
+
 $("a.btn.btn-primary.back-to-top").click(function() {
-    $('body').animate({scrollTop:200}, "slow");
+    $('body').animate({scrollTop:0}, 400);
 });
 
 $("span.glyphicon.glyphicon-info-sign").mouseover(function() {
