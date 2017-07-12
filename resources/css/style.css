@@ -15,6 +15,20 @@ h1.tlt {
     font-weight: 100;
 }
 
+.fill-y {
+    height: 100%;
+}
+
+.container.header {
+    height: 95%
+}
+
+.row.header {
+    position: relative;
+    top: 70%;
+    transform: translateY(-30%);
+}
+
 .center-y {
     position: relative;
     top: 50%;
@@ -87,6 +101,33 @@ li a:active {
     color: black;
 }
 
+@media all and (min-width: 960px) {
+    h1 {
+        font-size: 50px;
+    }
+    h2.header-subtitle {
+        font-size: 20px;
+    }
+}
+
+@media all and (max-width: 959px) and (min-width: 600px) {
+    h1 {
+        font-size: 5vw;
+    }
+    h2.header-subtitle {
+        font-size: 2vw;
+    }
+}
+
+@media all and (max-width: 599px) and (min-width: 50px) {
+    h1 {
+        font-size: 6vw;
+    }
+    h2.header-subtitle {
+        font-size: 3vw;
+    }
+}
+
 header {
     position: relative;
     background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../img/gallery1.jpg');
@@ -99,11 +140,14 @@ header {
     height: 100%;
 }
 
+h2.header-subtitle {
+    color: white;
+    font-weight: 300;
+}
+
 div.header-content {
     position: relative;
     text-align: right;
-    padding-left: 80px;
-    padding-right: 80px;
     padding-bottom: 50px;
     height: 95%;
 }
@@ -197,14 +241,10 @@ div .section-content {
 }
 
 div.container {
-    padding-top: 80px;
-    padding-bottom: 80px;
-    padding-left: 30px auto;
-    padding-right: 30px auto;
-}
-
-div.container.footer-container {
-    padding-bottom: 30px;
+    box-sizing: border-box;
+    padding: 80px 30px 80px 30px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 section#gallery.bg-primary {
@@ -273,10 +313,21 @@ h4#project-subtitle {
     padding-bottom: 30px;
 }
 
-div#project-description {
+div#project-box {
     float: left;
-    width: 50%;
     position: inline-block;
+}
+
+div#project-description {
+    height: 80%;
+}
+
+div#project-github {
+    height: 20%;
+}
+
+p#project-paragraph {
+    margin-right: 30px;
 }
 
 div.project-visual {
@@ -287,4 +338,8 @@ div.project-visual {
 
 section#footer {
     background-color: #424242;
+}
+
+div.container.footer-container {
+    padding-bottom: 30px;
 }
