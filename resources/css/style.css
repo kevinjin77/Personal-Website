@@ -130,7 +130,7 @@ li a:active {
 
 header {
     position: relative;
-    background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../img/gallery1.jpg');
+    background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../img/gallery7.jpg');
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -249,7 +249,7 @@ div.container {
 
 section#gallery.bg-primary {
     position: relative;
-    background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../img/gallery2.jpg');
+    background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../img/gallery8.jpg');
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -257,6 +257,11 @@ section#gallery.bg-primary {
     background-position: center;
     width: 100%;
     height: 100%;
+}
+
+.gallery-img {
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 hr.light.half {
@@ -291,6 +296,7 @@ span.glyphicon.glyphicon-info-sign:hover {
 
 ul.nav.project-list {
     padding-top: 5px;
+    padding-bottom: 15px;
 }
 
 ul.nav.project-list:hover {
@@ -341,5 +347,30 @@ section#footer {
 }
 
 div.container.footer-container {
+    padding-top: 0;
     padding-bottom: 30px;
+}
+
+.back-to-top {
+    position: relative;
+    display: block;
+    height: 4em;
+    width: 4em;
+    border-radius: 50%;
+    margin: auto;
+    top: -2em;
+}
+
+.glyphicon-chevron-up {
+    font-size: 1.5em;
+    top: 27%;
+    left: 20%;
+    height: 50%;
+    width: 10px;
+    height: 10px;
+    display: block;
+}
+
+.social {
+    font-size: 1.5em;
 }
