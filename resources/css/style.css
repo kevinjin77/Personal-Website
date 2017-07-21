@@ -19,10 +19,6 @@ h1.tlt {
     height: 100%;
 }
 
-.container.header {
-    height: 95%
-}
-
 .row.header {
     position: relative;
     top: 70%;
@@ -240,11 +236,34 @@ div .section-content {
     padding-top: 5px;
 }
 
+.container.header {
+    height: 95%;
+    padding-bottom: 30px;
+}
+
 div.container {
     box-sizing: border-box;
     padding: 80px 30px 80px 30px;
     margin-right: auto;
     margin-left: auto;
+}
+
+@media screen and (min-width: 1000px) {
+    .gallery-images {
+        display: block;
+    }
+    #myCarousel {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .gallery-images {
+        display: none;
+    }
+    #myCarousel {
+        display: block;
+    }
 }
 
 section#gallery.bg-primary {
@@ -256,12 +275,29 @@ section#gallery.bg-primary {
     -o-background-size: cover;
     background-position: center;
     width: 100%;
-    height: 100%;
+    height: auto;
+    min-height: 100px;
 }
 
 .gallery-img {
     padding-top: 20px;
     padding-bottom: 20px;
+}
+
+.img-thumbnail {
+    opacity: 0.5;
+}
+
+.img-thumbnail:hover {
+    opacity: 1.0;
+}
+
+.img-carousel {
+    border: 2px solid #021a40;
+}
+
+div.carousel-caption h3 {
+    margin-bottom: 0;
 }
 
 hr.light.half {
