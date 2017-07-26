@@ -97,6 +97,8 @@ li a:active {
     color: black;
 }
 
+/* Resizing Text and Elements Based on Screen Size */
+
 @media all and (min-width: 960px) {
     h1 {
         font-size: 50px;
