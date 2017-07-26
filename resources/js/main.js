@@ -5,7 +5,7 @@ $(document).ready(function() {
 
 $('.tlt').textillate({
     loop: true,
-    in : {
+    in: {
         effect: 'fadeIn',
         delayScale: 1.5,
         delay: 30,
@@ -125,28 +125,28 @@ $("a.pig").click(function() {
     currentProject = 4;
 });
 
-function scrollHome () {
-	$('body').animate({scrollTop:0}, 400);
+function scrollHome() {
+    $('body').animate({ scrollTop: 0 }, 400);
 }
 
-function scrollAbout () {
-	$('body').animate({scrollTop:homeHeight}, 400);
+function scrollAbout() {
+    $('body').animate({ scrollTop: homeHeight }, 400);
 }
 
-function scrollGallery () {
-	$('body').animate({scrollTop:aboutHeight}, 400);
+function scrollGallery() {
+    $('body').animate({ scrollTop: aboutHeight }, 400);
 }
 
-function scrollProjects () {
-	$('body').animate({scrollTop:galleryHeight}, 400);
+function scrollProjects() {
+    $('body').animate({ scrollTop: galleryHeight }, 400);
 }
 
-function scrollContact () {
-	$('body').animate({scrollTop:projectsHeight}, 400);
+function scrollContact() {
+    $('body').animate({ scrollTop: projectsHeight }, 400);
 }
 
 $("a.btn.btn-primary.back-to-top").click(function() {
-    $('body').animate({scrollTop:0}, 400);
+    $('body').animate({ scrollTop: 0 }, 400);
 });
 
 $("span.glyphicon.glyphicon-info-sign").mouseover(function() {
