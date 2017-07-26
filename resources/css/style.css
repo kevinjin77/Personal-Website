@@ -410,3 +410,7 @@ div.container.footer-container {
 .social {
     font-size: 1.5em;
 }
+
+.email:hover {
+    color: white;
+}
