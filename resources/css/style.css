@@ -95,6 +95,7 @@ li a,
 li a:hover,
 li a:active {
     color: black;
+    cursor: pointer;
 }
 
 /* Resizing Text and Elements Based on Screen Size */
@@ -268,6 +269,23 @@ div.container {
     }
 }
 
+.hobbies {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.hobby-description {
+    text-align: left;
+}
+
+.resume {
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto;
+    margin-top: 20px;
+    width: 100px;
+}
+
 /* Gallery Section */
 
 section#gallery.bg-primary {
@@ -294,6 +312,11 @@ section#gallery.bg-primary {
 
 .img-thumbnail:hover {
     opacity: 1.0;
+}
+
+#myCarousel {
+    margin-left: auto; 
+    margin-right: auto; 
 }
 
 .img-carousel {
