@@ -67,10 +67,41 @@ $("i#menu-button.fa.fa-bars").click(function() {
 2 - Sushi Go
 3 - Sonic Dash
 4 - PIG */
-var currentProject = 3;
+var currentProject = 1;
+
+$("a.uw-scheduler").click(function() {
+    if (currentProject != 1) {
+        $("#project").fadeOut(500);
+        $("#project").fadeIn(500);
+        setTimeout(function() {
+            $('#project-title').html("UW SCHEDULER");
+            $('#language').html("Javascript");
+            $('#project-paragraph').html(`An application to find the best possible schedules for Waterloo students. It utilizes
+              the University of Waterloo's API to generate schedules and then assign a rating to each based on how good
+              professors are, as well as other factors such as the amount of time for lunch. Check it out at <a href=uwscheduler.com>uwscheduler.com</a>!`);
+            $("#project-link").attr("href", "https://github.com/kevinjin77/UWScheduler");
+        }, 500);
+    }
+    currentProject = 1;
+});
+
+$("a.wikipedia-game-bot").click(function() {
+    if (currentProject != 2) {
+        $("#project").fadeOut(500);
+        $("#project").fadeIn(500);
+        setTimeout(function() {
+            $('#project-title').html("WIKIPEDIA GAME BOT");
+            $('#language').html("Python (Flask), Javascript");
+            $('#project-paragraph').html(`A web app that requires the use of Datamuse API in order to solve the classic Wikipedia game as quickly
+              as possible. It also generates a graph to represent the path of the links that were clicked, and their respective proximity to the target link.`);
+            $("#project-link").attr("href", "https://github.com/kevinjin77/WikipediaGameBot");
+        }, 500);
+    }
+    currentProject = 2;
+});
 
 $("a.clarifai-chef").click(function() {
-    if (currentProject != 1) {
+    if (currentProject != 3) {
         $("#project").fadeOut(500);
         $("#project").fadeIn(500);
         setTimeout(function() {
@@ -80,11 +111,11 @@ $("a.clarifai-chef").click(function() {
             $("#project-link").attr("href", "https://github.com/kevinjin77/VisionChef");
         }, 500);
     }
-    currentProject = 1;
+    currentProject = 3;
 });
 
 $("a.sushi-go").click(function() {
-    if (currentProject != 2) {
+    if (currentProject != 4) {
         $("#project").fadeOut(500);
         $("#project").fadeIn(500);
         setTimeout(function() {
@@ -94,11 +125,11 @@ $("a.sushi-go").click(function() {
             $("#project-link").attr("href", "https://github.com/kevinjin77/SushiGoCalculator");
         }, 500);
     }
-    currentProject = 2;
+    currentProject = 4;
 });
 
 $("a.sonic-dash").click(function() {
-    if (currentProject != 3) {
+    if (currentProject != 5) {
         $("#project").fadeOut(500);
         $("#project").fadeIn(500);
         setTimeout(function() {
@@ -108,45 +139,36 @@ $("a.sonic-dash").click(function() {
             $("#project-link").attr("href", "https://github.com/kevinjin77/Sonic-Dash");
         }, 500);
     }
-    currentProject = 3;
-});
-
-$("a.pig").click(function() {
-    if (currentProject != 4) {
-        $("#project").fadeOut(500);
-        $("#project").fadeIn(500);
-        setTimeout(function() {
-            $('#project-title').html("PIG");
-            $('#language').html("Turing");
-            $('#project-paragraph').html("Play the game of PIG! One-player (vs. AI) and two-player modes are both available and you can choose from three different game modes!");
-            $("#project-link").attr("href", "https://github.com/kevinjin77/PIG");
-        }, 500);
-    }
-    currentProject = 4;
+    currentProject = 5;
 });
 
 function scrollHome() {
-    $('body').animate({ scrollTop: 0 }, 400);
+  window.scrollTo(0, 0)
+    // $('body').animate({ scrollTop: 0 }, 400);
 }
 
 function scrollAbout() {
-    $('body').animate({ scrollTop: homeHeight }, 400);
+  window.scrollTo(0, homeHeight)
+    // $('body').animate({ scrollTop: homeHeight }, 400);
 }
 
 function scrollGallery() {
-    $('body').animate({ scrollTop: aboutHeight }, 400);
+  window.scrollTo(0, aboutHeight)
+    // $('body').animate({ scrollTop: aboutHeight }, 400);
 }
 
 function scrollProjects() {
-    $('body').animate({ scrollTop: galleryHeight }, 400);
+  window.scrollTo(0, galleryHeight)
+    // $('body').animate({ scrollTop: galleryHeight }, 400);
 }
 
 function scrollContact() {
-    $('body').animate({ scrollTop: projectsHeight }, 400);
+  window.scrollTo(0, projectsHeight)
+    // $('body').animate({ scrollTop: projectsHeight }, 400);
 }
 
 $("a.btn.btn-primary.back-to-top").click(function() {
-    $('body').animate({ scrollTop: 0 }, 400);
+    // $('body').animate({ scrollTop: 0 }, 400);
 });
 
 $("span.glyphicon.glyphicon-info-sign").mouseover(function() {

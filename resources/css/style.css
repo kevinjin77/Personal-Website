@@ -279,8 +279,8 @@ div.container {
 }
 
 .resume {
-    display: block; 
-    margin-left: auto; 
+    display: block;
+    margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
     width: 100px;
@@ -315,8 +315,8 @@ section#gallery.bg-primary {
 }
 
 #myCarousel {
-    margin-left: auto; 
-    margin-right: auto; 
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .img-carousel {
