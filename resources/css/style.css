@@ -2,13 +2,13 @@
 body,
 input,
 button {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
 }
 
 p {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
 }
 
 h1.tlt {
@@ -53,7 +53,7 @@ div.navbar.navbar-invers.menu-wrap {
 }
 
 .menu-sign {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-weight: 600;
     line-height: 21px;
     padding-top: 5px;
@@ -87,8 +87,8 @@ body {
 ul.nav {
     color: #000000;
     padding-top: 100px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
 }
 
 li a,
@@ -183,7 +183,7 @@ header .trailer {
 
 a.btn.btn-default.btn-transparent {
     background-color: transparent;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-weight: 300;
     color: white;
     padding-top: 10px;
