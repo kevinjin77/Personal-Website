@@ -63,10 +63,6 @@ $("i#menu-button.fa.fa-bars").click(function() {
     }
 });
 
-/* 1 - Clarifai Chef
-2 - Sushi Go
-3 - Sonic Dash
-4 - PIG */
 var currentProject = 1;
 
 $("a.uw-scheduler").click(function() {
