@@ -80,6 +80,7 @@ $("a.uw-scheduler").click(function() {
               the University of Waterloo's API to generate schedules and then assign a rating to each based on how good
               professors are, as well as other factors such as the amount of time for lunch. Check it out at <a href=uwscheduler.com>uwscheduler.com</a>!`);
             $("#project-link").attr("href", "https://github.com/kevinjin77/UWScheduler");
+            $("#project-img").attr("src", "https://github.com/kevinjin77/UWScheduler/raw/master/img/inputForm.png");
         }, 500);
     }
     currentProject = 1;
@@ -95,6 +96,7 @@ $("a.wikipedia-game-bot").click(function() {
             $('#project-paragraph').html(`A web app that requires the use of Datamuse API in order to solve the classic Wikipedia game as quickly
               as possible. It also generates a graph to represent the path of the links that were clicked, and their respective proximity to the target link.`);
             $("#project-link").attr("href", "https://github.com/kevinjin77/WikipediaGameBot");
+            $("#project-img").attr("src", "https://github.com/kevinjin77/WikipediaGameBot/raw/master/img/LandingPage.png");
         }, 500);
     }
     currentProject = 2;
@@ -109,23 +111,10 @@ $("a.clarifai-chef").click(function() {
             $('#language').html("Java (Android Studio)");
             $('#project-paragraph').html("An Android app that uses machine vision to generate recipes based on the ingredients inside of your fridge.");
             $("#project-link").attr("href", "https://github.com/kevinjin77/VisionChef");
+            $("#project-img").attr("src", "https://github.com/kevinjin77/VisionChef/raw/master/img/pic2.png");
         }, 500);
     }
     currentProject = 3;
-});
-
-$("a.sushi-go").click(function() {
-    if (currentProject != 4) {
-        $("#project").fadeOut(500);
-        $("#project").fadeIn(500);
-        setTimeout(function() {
-            $('#project-title').html("SUSHI GO");
-            $('#language').html("HTML, CSS, Javascript");
-            $('#project-paragraph').html("A simple Javascript application to calculate scores for Sushi Go.");
-            $("#project-link").attr("href", "https://github.com/kevinjin77/SushiGoCalculator");
-        }, 500);
-    }
-    currentProject = 4;
 });
 
 $("a.sonic-dash").click(function() {
@@ -137,9 +126,10 @@ $("a.sonic-dash").click(function() {
             $('#language').html("Turing");
             $('#project-paragraph').html("A side-scrolling minigame with your favorite characters from the Sonic franchise! This game includes a variety of different power-ups, as well as a plethora of Dr. Eggman's baddies. Includes highscore functionality!");
             $("#project-link").attr("href", "https://github.com/kevinjin77/Sonic-Dash");
+            $("#project-img").attr("src", "https://raw.githubusercontent.com/kevinjin77/Sonic-Dash/master/Pics/SonicDashGameplay.PNG");
         }, 500);
     }
-    currentProject = 5;
+    currentProject = 4;
 });
 
 function scrollHome() {
