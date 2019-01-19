@@ -8,7 +8,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <title>Kevin Jin - Website</title>
     <!-- Roboto font embed -->
-    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600|Roboto:100,300,400,500,700" rel="stylesheet">
     <!-- Stylesheets -->
     <link rel="stylesheet" type="text/css" href="resources/css/reset.min.css">
@@ -27,7 +26,6 @@
             <li><a onclick="scrollGallery();">Gallery</a></li>
             <li><a onclick="scrollProjects();">Projects</a></li>
             <li><a href="resources/assets/resume.pdf" target="_blank">Resume</a></li>
-            <li><a onclick="scrollContact();">Contact</a></li>
         </ul>
     </div>
     <div class="navbar navbar-invers menu-wrap" style="position: fixed; z-index: 9; width: 100%; background-color: transparent;">
@@ -45,7 +43,7 @@
                             <h1 class="tlt" style="font-size: 30px + 3vw;">
 								<ul class="texts">
 									<li>Hello there.</li>
-                  <li>Welcome to my website.</li>
+                                    <li>Welcome to my website.</li>
 									<li>I hope you enjoy what you see.</li>
 									<li>I have a lot to show you.</li>
 								</ul>
@@ -54,6 +52,23 @@
                             <a onclick="scrollAbout();" class="btn btn-default btn-transparent">Let's Get Started</a>
                         </div>
                     </div>
+                </div>
+            </div>
+            <div class="row contacts">
+                <div class="col-sm-4">
+                    <a href="resources/assets/resume.pdf" target="_blank" class="resume btn btn-default">
+                        <i class = "fa fa-file"></i> Resume
+                    </a>
+                </div>
+                <div class="col-sm-4">
+                    <a href="https://github.com/kevinjin77" target="_blank" class="resume btn btn-default">
+                        <i class = "fa fa-github"></i> Github
+                    </a>
+                </div>
+                <div class="col-sm-4">
+                    <a href="https://www.linkedin.com/in/kevin-jin/" target="_blank" class="resume btn btn-default">
+                        <i class = "fa fa-linkedin"></i> LinkedIn
+                    </a>
                 </div>
             </div>
         </div>
@@ -70,29 +85,33 @@
                 <div class="col-sm-12">
                     <div class="section-heading">
                         <h2 class="section-heading">About Me</h2>
-                        <hr class="bigHr" style="margin-bottom: 15px">
                     </div>
                     <div class="section-content">
                         <p class="text-faded">Welcome to my website! My name is Kevin Jin and I'm currently studying Computer Science at the University of Waterloo.</p>
+                        <div style="display: flex; justify-content: center">
+                            <img src="./resources/assets/avatar.jpg" alt="Avatar" height="150" width="150" class="avatar center">
+                        </div>
                         <p class="text-faded">Some of my favorite things to do in my spare time are: </p>
                         <div class="row hobbies">
+                            
+                        </div>
+                        <div class="row hobbies">
                             <div class="col-sm-4">
-                            <i class = "fa fa-gamepad" style="font-size: 50px"></i>
+                                <i class = "fa fa-gamepad" style="font-size: 50px"></i>
                                 <h2>Video Games</h2>
                                 <p class="hobby-description">Ever since a young age, I've always enjoyed playing video games. From classic titles like Donkey Kong Country, to Super Smash Bros. Melee, to League of Legends, video games have always managed to bring me enjoyment.</p>
                             </div>
                             <div class="col-sm-4">
-                            <i class = "fa fa-dribbble" style="font-size: 50px"></i>
-                            <h2>Sports</h2>
+                                <i class = "fa fa-dribbble" style="font-size: 50px"></i>
+                                <h2>Sports</h2>
                                 <p class="hobby-description">I love watching a bunch of different sports, including but not limited to Basketball, Football, Baseball, and Tennis. Since I lived my early childhood in a town near Boston, all of my favorite teams also happen to be in that area.
                             </div>
                             <div class="col-sm-4">
-                            <i class = "fa fa-code" style="font-size: 50px"></i>
-                            <h2>Programming</h2>
-                            <p class="hobby-description">I've been passionate about coding ever since I started back in highschool when I took my first programming course back in Grade 10. I love bringing ideas to life and creating applications that are useful for my own personal use.
+                                <i class = "fa fa-code" style="font-size: 50px"></i>
+                                <h2>Programming</h2>
+                                <p class="hobby-description">I've been passionate about coding ever since I started back in highschool when I took my first programming course back in Grade 10. I love bringing ideas to life and creating applications that are useful for my own personal use.
                             </div>
                         </div>
-                        <a href="resources/assets/resume.pdf" target="_blank" class="resume btn btn-default">Resume</a>
                     </div>
                 </div>
             </div>
@@ -104,7 +123,6 @@
             <div class="row">
                 <div class="col-sm-12">
                     <h2 class="section-heading">Gallery</h2>
-                    <hr class="bigHr white">
                     <p class="text-faded">Some of the places I've gone in the past couple years. Hoping to travel the world one day and add to this collection!</p>
                 </div>
             </div>
@@ -234,7 +252,6 @@
         <div class="container fill-y">
             <div class="row">
                 <h2 class="section-heading">Projects</h2>
-                <hr class="bigHr" style="margin-bottom: 15px">
                 <div style="padding: 0 0 0 0" class="col-sm-2">
                     <div class="project-list" style="float: left; position: inline-block;">
                         <ul class="nav project-list">
@@ -278,8 +295,7 @@
         <div class="container footer-container">
             <div class="row">
                 <div class="col-md-8 col-md-offset-2 text-center">
-                    <h2 class="section-heading">Contact Info</h2>
-                    <hr class="primary">
+                    <p>Kevin Jin © 2019</p>
                 </div>
                 <!-- Need To Fix -->
                 

@@ -129,28 +129,33 @@ $("a.sonic-dash").click(function() {
 });
 
 function scrollHome() {
-  window.scrollTo(0, 0)
-    // $('body').animate({ scrollTop: 0 }, 400);
+  $([document.documentElement, document.body]).animate({
+    scrollTop: $("#home").offset().top
+}, 500);
 }
 
 function scrollAbout() {
-  window.scrollTo(0, homeHeight)
-    // $('body').animate({ scrollTop: homeHeight }, 400);
+  $([document.documentElement, document.body]).animate({
+      scrollTop: $("#about").offset().top
+  }, 500);
 }
 
 function scrollGallery() {
-  window.scrollTo(0, aboutHeight)
-    // $('body').animate({ scrollTop: aboutHeight }, 400);
+  $([document.documentElement, document.body]).animate({
+    scrollTop: $("#gallery").offset().top
+}, 500);
 }
 
 function scrollProjects() {
-  window.scrollTo(0, galleryHeight)
-    // $('body').animate({ scrollTop: galleryHeight }, 400);
+  $([document.documentElement, document.body]).animate({
+    scrollTop: $("#projects").offset().top
+}, 500);
 }
 
 function scrollContact() {
-  window.scrollTo(0, projectsHeight)
-    // $('body').animate({ scrollTop: projectsHeight }, 400);
+  $([document.documentElement, document.body]).animate({
+    scrollTop: $("#contact").offset().top
+}, 500);
 }
 
 $("a.btn.btn-primary.back-to-top").click(function() {
